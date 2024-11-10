@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Lacquer&family=Rubik+Moonrocks&family=Russo+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lacquer", system-ui;
+}
+:root {
+  --alto_nav: 70px;
+  --color_primario: #f6e231;
+  --color_secundario: #2a2929;
+  --color_blanco: #c2c2c2;
+  --tamaño_fuente: 20px;
+  --maximo_ancho: 1200px;
+  --alto_nav: 70px;
+}
+::selection {
+  background-color: var(--color_primario);
+  color: var(--color_secundario);
+}
+body {
+  font-size: var(--tamaño_fuente);
+  background-color: var(--color_secundario);
+  color: var(--color_blanco);
+}
+header {
+  background-color: var(--color_primario);
+  color: var(--color_secundario);
+  position: sticky;
+  width: 100%;
+  top: 0;
+}
+section {
+}
+.contenedor {
+  width: 100%;
+  max-width: var(--maximo_ancho);
+  margin: 0 auto;
+  overflow: hidden;
+  color: rgb(255, 255, 255);
+}
+
+.h-100 {
+  height: calc(100vh - var(--alto_nav));
+}
+.nav {
+  /*
+  height: 70px;*/
+}
+.nav_contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav_lista {
+  height: var(--alto_nav);
+  list-style: none;
+  display: flex;
+  justify-content: var(--maximo_ancho);
+  align-items: center;
+  gap: 2rem;
+}
+.nav_link {
+  text-decoration: none;
+  color: var(--color_secundario);
+  font-weight: 700;
+}
+.logo {
+  width: 70px;
+  height: 70px;
+}
+.logo1 {
+  width: 500px;
+  height: 500 px;
+}
+.principal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ilustracion {
+  order: 1;
+  flex-basis: 40%;
+}
+
+.contenedor_textos {
+  order: 0;
+  flex-basis: 50%;
+}
+.titulo {
+  font-size: 48px;
+  font-weight: 700;
+}
+.parrrafo {
+  margin: 20px;
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--color_primario);
+  color: var(--color_secundario);
+  text-decoration: none;
+  font-weight: 700;
+  padding: 16px 30px;
+  border-radius: 30px;
+}
+.logo2 {
+  width: 400px;
+  height: 400px;
+}
+
+/*--------------------servicios----------------*/
+
+.text-center {
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card_item {
+  max-width: 350px;
+  width: 30%;
+  box-shadow: 0 0 5px;
+  text-align: center;
+  background-color: var(--color_blanco);
+  color: var(--color_secundario);
+  padding: 40px 0;
+}
+
+.card_plan {
+}
+
+.card_precio {
+}
+
+.card_caracteristica {
+}
